@@ -1,0 +1,9 @@
+<p>Page Works</p>
+<form (submit)="updateThisProduct()">
+  <input type="text" name="editProduct.title" [(ngModel)]="editProduct.title">
+  <input type="number" name="editProduct.price" [(ngModel)]="editProduct.price">
+  <input type="text" name="editProduct.url" [(ngModel)]="editProduct.url">
+  <button [routerLink]="['/products']">CANCEL</button>
+  <input type="submit" value="EDIT">
+</form>
+<router-outlet></router-outlet>
